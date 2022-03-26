@@ -6,7 +6,8 @@
 
 // THIS FILE IS GENERATED AUTOMATICALLY AND SHOULD NOT BE EDITED DIRECTLY.
 
-// ignore_for_file: unused_import
+// ignore_for_file: unused_import, non_constant_identifier_names
+// ignore_for_file: constant_identifier_names, camel_case_types
 
 import 'dart:ffi';
 
@@ -32,6 +33,6 @@ final _scarddlg = DynamicLibrary.open('scarddlg.dll');
 int SCardUIDlgSelectCard(Pointer<OPENCARDNAME_EX> param0) =>
     _SCardUIDlgSelectCard(param0);
 
-late final _SCardUIDlgSelectCard = _scarddlg.lookupFunction<
+final _SCardUIDlgSelectCard = _scarddlg.lookupFunction<
     Int32 Function(Pointer<OPENCARDNAME_EX> param0),
     int Function(Pointer<OPENCARDNAME_EX> param0)>('SCardUIDlgSelectCardW');

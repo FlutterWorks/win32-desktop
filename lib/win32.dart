@@ -29,9 +29,9 @@
 /// version, which in the original header files are suffixed with a capital 'W'
 /// (e.g. `FormatMessageW`).
 ///
-/// You can use the [toNativeUtf16] function to convert a Dart string into a
-/// `Pointer<Utf16>`, which can be passed to any Windows API expecting a string,
-/// for example:
+/// You can use the `toNativeUtf16` String extension function (import
+/// `package:ffi`) to convert a Dart string into a `Pointer<Utf16>`, which can
+/// be passed to any Windows API expecting a string, for example:
 /// ```dart
 ///   final verb = 'open'.toNativeUtf16();
 ///   final process = 'notepad.exe'.toNativeUtf16();
@@ -56,7 +56,7 @@
 /// ```
 ///
 /// A small number of APIs offer no wide version (e.g. `GetProcAddress`), and so
-/// the [convertToANSIString] method may be of use to convert a Dart string to a
+/// the `toANSI` method may be of use to convert a Dart string to a
 /// `Pointer<Uint8>`, which represents this format:
 /// ```dart
 ///   final ansi = convertToANSIString('Beep');
@@ -117,6 +117,7 @@ export 'src/extensions/unpack_utf16.dart';
 
 // Traditional C-style Windows APIs
 export 'src/advapi32.dart';
+export 'src/bluetoothapis.dart';
 export 'src/bthprops.dart';
 export 'src/combase.dart';
 export 'src/comctl32.dart';
@@ -134,6 +135,7 @@ export 'src/oleaut32.dart';
 export 'src/powrprof.dart';
 export 'src/rometadata.dart';
 export 'src/scarddlg.dart';
+export 'src/setupapi.dart';
 export 'src/shcore.dart';
 export 'src/shell32.dart';
 export 'src/spoolss.dart';
@@ -181,8 +183,16 @@ export 'src/com/IAppxManifestReader7.dart';
 export 'src/com/IAppxPackageReader.dart';
 export 'src/com/IAsyncAction.dart';
 export 'src/com/IAsyncInfo.dart';
+export 'src/com/IAudioCaptureClient.dart';
+export 'src/com/IAudioClient.dart';
+export 'src/com/IAudioClock.dart';
+export 'src/com/IAudioRenderClient.dart';
+export 'src/com/IAudioSessionControl.dart';
+export 'src/com/IAudioSessionManager.dart';
+export 'src/com/IAudioStreamVolume.dart';
 export 'src/com/IBindCtx.dart';
 export 'src/com/ICalendar.dart';
+export 'src/com/IChannelAudioVolume.dart';
 export 'src/com/IClassFactory.dart';
 export 'src/com/IConnectionPoint.dart';
 export 'src/com/IConnectionPointContainer.dart';
@@ -208,6 +218,8 @@ export 'src/com/IFileSaveDialog.dart';
 export 'src/com/IInspectable.dart';
 export 'src/com/IKnownFolder.dart';
 export 'src/com/IKnownFolderManager.dart';
+export 'src/com/IMMDevice.dart';
+export 'src/com/IMMDeviceEnumerator.dart';
 export 'src/com/IModalWindow.dart';
 export 'src/com/IMoniker.dart';
 export 'src/com/INetwork.dart';
@@ -228,10 +240,14 @@ export 'src/com/IShellItem2.dart';
 export 'src/com/IShellItemArray.dart';
 export 'src/com/IShellItemFilter.dart';
 export 'src/com/IShellItemResources.dart';
+export 'src/com/IShellLink.dart';
 export 'src/com/IShellLinkDataList.dart';
 export 'src/com/IShellLinkDual.dart';
-export 'src/com/IShellLink.dart';
 export 'src/com/IShellService.dart';
+export 'src/com/ISimpleAudioVolume.dart';
+export 'src/com/ISpEventSource.dart';
+export 'src/com/ISpNotifySource.dart';
+export 'src/com/ISpVoice.dart';
 export 'src/com/ISpellChecker.dart';
 export 'src/com/ISpellCheckerChangedEventHandler.dart';
 export 'src/com/ISpellCheckerFactory.dart';

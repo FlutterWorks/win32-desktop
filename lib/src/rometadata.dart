@@ -6,7 +6,8 @@
 
 // THIS FILE IS GENERATED AUTOMATICALLY AND SHOULD NOT BE EDITED DIRECTLY.
 
-// ignore_for_file: unused_import
+// ignore_for_file: unused_import, non_constant_identifier_names
+// ignore_for_file: constant_identifier_names, camel_case_types
 
 import 'dart:ffi';
 
@@ -34,7 +35,7 @@ int MetaDataGetDispenser(
         Pointer<GUID> rclsid, Pointer<GUID> riid, Pointer<Pointer> ppv) =>
     _MetaDataGetDispenser(rclsid, riid, ppv);
 
-late final _MetaDataGetDispenser = _rometadata.lookupFunction<
+final _MetaDataGetDispenser = _rometadata.lookupFunction<
     Int32 Function(
         Pointer<GUID> rclsid, Pointer<GUID> riid, Pointer<Pointer> ppv),
     int Function(Pointer<GUID> rclsid, Pointer<GUID> riid,

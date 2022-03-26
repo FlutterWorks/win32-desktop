@@ -6,7 +6,8 @@
 
 // THIS FILE IS GENERATED AUTOMATICALLY AND SHOULD NOT BE EDITED DIRECTLY.
 
-// ignore_for_file: unused_import
+// ignore_for_file: unused_import, non_constant_identifier_names
+// ignore_for_file: constant_identifier_names, camel_case_types
 
 import 'dart:ffi';
 
@@ -37,7 +38,7 @@ int CallNtPowerInformation(int InformationLevel, Pointer InputBuffer,
     _CallNtPowerInformation(InformationLevel, InputBuffer, InputBufferLength,
         OutputBuffer, OutputBufferLength);
 
-late final _CallNtPowerInformation = _powrprof.lookupFunction<
+final _CallNtPowerInformation = _powrprof.lookupFunction<
     Int32 Function(
         Int32 InformationLevel,
         Pointer InputBuffer,

@@ -1,3 +1,19 @@
+## 2.4.4
+
+- Fix broken doc links.
+
+## 2.4.3
+
+- Add Bluetooth LE APIs
+
+## 2.4.2
+
+- Add speech API (SAPI) support and sample
+- Add Windows Audio Session API (WASAPI) support
+- Automate more struct generation
+- Apply more lints to source code
+- Add GetUserName and update sysinfo example
+
 ## 2.4.1
 
 - Fix import error for gamepad APIs

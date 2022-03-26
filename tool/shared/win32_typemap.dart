@@ -35,6 +35,8 @@ const callbackTypeMapping = win32Version == 2
             'Pointer<NativeFunction<MagImageScalingCallback>>',
         'PFN_AUTHENTICATION_CALLBACK_EX':
             'Pointer<NativeFunction<PfnAuthenticationCallbackEx>>',
+        'PFNBLUETOOTH_GATT_EVENT_CALLBACK':
+            'Pointer<NativeFunction<PfnbluetoothGattEventCallback>>',
         'PSYM_ENUMERATESYMBOLS_CALLBACKW':
             'Pointer<NativeFunction<SymEnumSymbolsProc>>',
         'LPEXCEPFINO_DEFERRED_FILLIN': 'Pointer<NativeFunction<ExcepInfoProc>>',
@@ -42,5 +44,6 @@ const callbackTypeMapping = win32Version == 2
             'Pointer<NativeFunction<WlanNotificationCallback>>',
         'PFTASKDIALOGCALLBACK':
             'Pointer<NativeFunction<TaskDialogCallbackProc>>',
+        'SPNOTIFYCALLBACK': 'Pointer<NativeFunction<SpNotifyCallback>>',
       }
     : <String, String>{};

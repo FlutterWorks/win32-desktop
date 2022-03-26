@@ -2,6 +2,8 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
+// ignore_for_file: non_constant_identifier_names
+
 // Native callback functions that can get called by the Win32 API
 
 import 'dart:ffi';
@@ -123,12 +125,22 @@ typedef OutputProc = Int32 Function(IntPtr Arg1, IntPtr Arg2, Int32 Arg3);
 typedef PfnAuthenticationCallbackEx = Int32 Function(Pointer pvParam,
     Pointer<BLUETOOTH_AUTHENTICATION_CALLBACK_PARAMS> pAuthCallbackParams);
 
+/// Application-defined callback function used with profile drivers to implement
+/// a Bluetooth GATT event callback to be called whenever the value of a
+/// specific characteristic changes.
+typedef PfnbluetoothGattEventCallback = Void Function(
+    Int32 EventType, Pointer EventOutParameter, Pointer Context);
+
 /// Application-defined callback function used with the SendMessageCallback
 /// function. The system passes the message to the callback function after
 /// passing the message to the destination window procedure. The SENDASYNCPROC
 /// type defines a pointer to this callback function. SendAsyncProc is a
 /// placeholder for the application-defined function name.
 typedef SendAsyncProc = Void Function(IntPtr, Uint32, IntPtr, IntPtr);
+
+// Application-defined callback function used with SAPI clients to receive
+// notifications.
+typedef SpNotifyCallback = Void Function(WPARAM wParam, LPARAM lParam);
 
 /// Application-defined callback function used with the RemoveWindowSubclass
 /// and SetWindowSubclass functions.

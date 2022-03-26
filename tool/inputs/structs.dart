@@ -43,6 +43,22 @@ const structsToGenerate = <String, String>{
       "The BLUETOOTH_RADIO_INFO structure provides information about a Bluetooth radio.",
   "Windows.Win32.System.StationsAndDesktops.BSMINFO":
       "Contains information about a window that denied a request from BroadcastSystemMessageEx.",
+  "Windows.Win32.Devices.Bluetooth.BLUETOOTH_GATT_VALUE_CHANGED_EVENT":
+      "The BLUETOOTH_GATT_VALUE_CHANGED_EVENT structure describes a changed attribute value.",
+  "Windows.Win32.Devices.Bluetooth.BLUETOOTH_GATT_VALUE_CHANGED_EVENT_REGISTRATION":
+      "The BLUETOOTH_GATT_VALUE_CHANGED_EVENT_REGISTRATION structure describes one or more characteristics that have changed.",
+  "Windows.Win32.Devices.Bluetooth.BTH_LE_GATT_CHARACTERISTIC":
+      "The BTH_LE_GATT_CHARACTERISTIC structure describes a Bluetooth Low Energy (LE) generic attribute (GATT) profile characteristic.",
+  "Windows.Win32.Devices.Bluetooth.BTH_LE_GATT_CHARACTERISTIC_VALUE":
+      "The BTH_LE_GATT_CHARACTERISTIC_VALUE structure describes a Bluetooth Low Energy (LE) generic attribute (GATT) profile characteristic value.",
+  "Windows.Win32.Devices.Bluetooth.BTH_LE_GATT_DESCRIPTOR":
+      "The BTH_LE_GATT_DESCRIPTOR structure describes a Bluetooth Low Energy (LE) generic attribute (GATT) profile descriptor.",
+  "Windows.Win32.Devices.Bluetooth.BTH_LE_GATT_DESCRIPTOR_VALUE":
+      "The BTH_LE_GATT_DESCRIPTOR_VALUE structure describes a parent characteristic.",
+  "Windows.Win32.Devices.Bluetooth.BTH_LE_GATT_SERVICE":
+      "The BTH_LE_GATT_SERVICE structure describes a Bluetooth Low Energy (LE) generic attribute (GATT) profile service.",
+  "Windows.Win32.Devices.Bluetooth.BTH_LE_UUID":
+      "The BTH_LE_UUID structure contains information about a Bluetooth Low Energy (LE) Universally Unique Identifier (UUID).",
   "Windows.Win32.Storage.FileSystem.BY_HANDLE_FILE_INFORMATION":
       "Contains information that the GetFileInformationByHandle function retrieves.",
   "Windows.Win32.UI.WindowsAndMessaging.CBT_CREATEWNDW":
@@ -400,6 +416,12 @@ const structsToGenerate = <String, String>{
       "Identifies an authentication service that a server is willing to use to communicate to a client.",
   "Windows.Win32.Devices.DeviceAndDriverInstallation.SP_DEVINFO_DATA":
       "An SP_DEVINFO_DATA structure defines a device instance that is a member of a device information set.",
+  "Windows.Win32.Media.Speech.SPEVENT":
+      "SPEVENT contains information about an event. Events are passed from the text-to-speech (TTS) or speech recognition (SR) engines or audio devices back to applications.",
+  "Windows.Win32.Media.Speech.SPEVENTSOURCEINFO":
+      "SPEVENTSOURCEINFO is used by ISpEventSource::GetInfo to pass back information about the event source. Event sources contain a queue, which hold events until a caller retrieves the events using ::GetEvents.",
+  "Windows.Win32.Media.Speech.SPVOICESTATUS":
+      "SPVOICESTATUS contains voice status information. This structure is returned by ISpVoice::GetStatus.",
   "Windows.Win32.System.Threading.STARTUPINFOW":
       "Specifies the window station, desktop, standard handles, and appearance of the main window for a process at creation time.",
   "Windows.Win32.System.Threading.STARTUPINFOEXW":
